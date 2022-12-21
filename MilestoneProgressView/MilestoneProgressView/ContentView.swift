@@ -36,8 +36,8 @@ struct MilestoneProgressView: View {
                             .mask(
                                 HStack {
                                     Rectangle()
-                                    
                                         .frame(width: bounds.size.width * progress, alignment: .leading)
+                                        .blur(radius: 2)
                                     Spacer(minLength: 0)
                                 }
                             )
